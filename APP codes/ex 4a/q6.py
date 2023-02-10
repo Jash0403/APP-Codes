@@ -1,0 +1,30 @@
+from tkinter import *
+master = Tk()
+v = IntVar()
+options = []
+for i in range(1, 16):
+    options.append(i)
+Label(master, text="Annual Rate:").grid(row=0)
+Label(master, text="Number of Payments:").grid(row=1)
+Label(master, text="Loan Principle:").grid(row=2)
+Label(master, text="Monthly Payment:").grid(row=3)
+Label(master, text="Remaining Loan:").grid(row=4)
+# entry fields
+e1 = Entry(master)
+e2 = Entry(master)
+e3 = Entry(master)
+e4 = Entry(master)
+e5 = Entry(master)
+b1 = Button(master, text="Final Balance")
+b2 = Button(master, text="Monthly Payment")
+b3 = Button(master, text="Quit")
+# Place fields
+e1.grid(row=0, column=1)
+e2.grid(row=1, column=1)
+e3.grid(row=2, column=1)
+e4.grid(row=3, column=1)
+e5.grid(row=4, column=1)
+b1.grid(row=5, column=0)
+b2.grid(row=5, column=1)
+b3.grid(row=5, column=2)
+mainloop()
